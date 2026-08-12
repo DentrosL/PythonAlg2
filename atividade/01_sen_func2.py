@@ -1,5 +1,3 @@
-# dividir em 5 funções e identificar valores de saidas
-
 # Base de dados (Escopo global do script)
 estoque = [
     {"id": 1, "nome": "Notebook", "preco": 3500.0, "qtd": 5},
@@ -9,13 +7,8 @@ estoque = [
 carrinho = []
 taxa_imposto_padrao = 0.05  # 5% de taxa padrão
 
-executando = True
-
-# def exibirMenu():
-# def 
-
-while executando:
-    # --- Exibição do Menu Principal ---
+# def exibir_menu():                                # Exibe o menu de opções para o usuário
+def exibir_menu():                                  # Entrada: nenhuma
     print("\n" + "=" * 30)
     print("      SISTEMA DE ESTOQUE      ")
     print("=" * 30)
@@ -24,8 +17,19 @@ while executando:
     print("3. Exibir Carrinho e Total")
     print("4. Cadastrar Novo Produto")
     print("0. Sair")
-    
+
     opcao = input("\nEscolha uma opção: ")
+
+    return opcao                                    # Saída: opção escolhida pelo usuário
+
+# def listar_produtos()                             # Listagem de produtos já cadastrados no sistema
+executando = True
+# def add_carrinho()                                # Adicionar item ao carrinho
+# def mostrar_carrinho()                            # Visualizar itens do carrinho
+# def add_produto()                                 # Adicionar novo item ao estoque
+
+while executando:
+    exibir_menu()
 
     # --- Opção 1: Listar Produtos ---
     if opcao == "1":
