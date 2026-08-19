@@ -12,4 +12,14 @@ def vert(n):
         vert(n // 10) # ... resolvendo de trás pra frente... 321... 32.. 3... fim
         print(n % 10) # isolar o último número e imprimir
 
-print(3214)
+def verti(m):
+    if m <= 9: # ou < 10, mesma coisa = caso base
+        print(n)
+    else:
+        print(m % 10) 
+        vert(m // 10)
+
+i = int(input('informe um numero'))
+
+vert(i) # normal
+verti(i) # invertido
