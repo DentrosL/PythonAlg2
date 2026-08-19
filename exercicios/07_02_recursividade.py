@@ -6,10 +6,10 @@
 # 4
 
 def vert(n):
-    if n <= 9:
+    if n <= 9: # ou < 10, mesma coisa = caso base
         print(n)
     else:
-        vert(n // 10) # divisão 
-        print(n % 10) # isolar o último número
+        vert(n // 10) # ... resolvendo de trás pra frente... 321... 32.. 3... fim
+        print(n % 10) # isolar o último número e imprimir
 
 print(3214)
